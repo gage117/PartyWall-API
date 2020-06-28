@@ -5,6 +5,7 @@ PartyWall API is used to store and retrieve items (food, drinks) they want to se
 ## Possible Improvements
 - Link user IDs in database to drinks and foods to retrieve a specifics users food or drinks instead of food or drinks of all users
 - Create test files
+- Add error handling if any field is missing during POST requests
 
 ## Set up
 
@@ -26,6 +27,16 @@ Start the application `npm start`
 Start nodemon for the application `npm run dev`
 
 Run the tests `npm test`
+
+## Routes
+### /food
+- GET returns list of food from all users
+- POST expects a JSON object in the body containing name, description, weight, price, and quantity
+- DELETE expects a JSON object in the body containing name
+### /drinks
+- GET returns list of drinks from all users
+- POST expects a JSON object in the body containing name, volume, price, and quantity
+- DELETE expects a JSON object in the body containing name
 
 ## Deploying
 
