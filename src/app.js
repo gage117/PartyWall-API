@@ -5,7 +5,8 @@ const cors = require('cors');
 const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
 const authRouter = require('./auth/auth-router');
-const RouteService = require('./route-service');
+const foodRouter = require('./foods/food-router');
+const drinkRouter = require('./drinks/drink-router');
 
 // Create express app
 const app = express();
@@ -32,16 +33,10 @@ app.use(helmet());
  */
 // Route used for handling User Login
 app.use('/auth', authRouter);
-// Route to get foods from all users
-app.get('/foods', async (req, res) => {
-  const foods = await RouteService.getFoods(req.app.get('db'))
-  res.send(foods)
-})
+// Food route
+app.use('/food', foodRouter);
 // Route to get drinks from all users
-app.get('/drinks', async (req, res) => {
-  const drinks = await RouteService.getDrinks(req.app.get('db'))
-  res.send(drinks)
-})
+app.use('/drinks', drinkRouter);
 
 // Error Handler
 app.use(function errorHandler(error, req, res, next) {
