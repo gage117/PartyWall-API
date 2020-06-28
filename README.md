@@ -4,6 +4,7 @@ PartyWall API is used to store and retrieve items (food, drinks) they want to se
 
 ## Possible Improvements
 - Link user IDs in database to drinks and foods to retrieve a specifics users food or drinks instead of food or drinks of all users
+- Create test files
 
 ## Set up
 
