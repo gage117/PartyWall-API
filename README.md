@@ -14,7 +14,9 @@ Complete the following steps to clone and set up PartyWall API:
 2. `cd` into the cloned repository
 3. Install the node dependencies `npm install`
 4. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-5. Create Database and run Migrations
+5. Connect to your Postgres server (psql)
+6. Create database named 'partywall' and set the owner to postgres (CREATE DATABASE partywall OWNER postgres;)
+7. Migrate database with appropriate tables using the script 'npm run migrate'
 
 ## Scripts
 
