@@ -3,6 +3,7 @@
 PartyWall API is used to store and retrieve items (food, drinks) they want to sell at parties.
 
 ## Possible Improvements
+- Finish DELETE routes on food and drink
 - Link user IDs in database to drinks and foods to retrieve a specifics users food or drinks instead of food or drinks of all users
 - Create test files
 - Add error handling if any field is missing during POST requests
@@ -37,6 +38,8 @@ Run the tests `npm test`
 - GET returns list of drinks from all users
 - POST expects a JSON object in the body containing name, volume, price, and quantity
 - DELETE expects a JSON object in the body containing name
+### /auth/token
+- POST expects a JSON object containing email and password
 
 ## Deploying
 
