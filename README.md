@@ -17,6 +17,7 @@ Complete the following steps to clone and set up PartyWall API:
 5. Connect to your Postgres server (psql)
 6. Create database named 'partywall' and set the owner to postgres (CREATE DATABASE partywall OWNER postgres;)
 7. Migrate database with appropriate tables using the script 'npm run migrate'
+8. Seed database by running the psql command 'psql -U postgres -d partywall -f ./seeds/seed.all_tables.sql'
 
 ## Scripts
 
