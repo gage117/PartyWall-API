@@ -1,10 +1,10 @@
-# Express Boilerplate!
+# PartyWall API
 
-This is a boilerplate project used for starting new projects!
+PartyWall API is used to store and retrieve items (food, drinks) they want to sell at parties.
 
 ## Set up
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+Complete the following steps to clone and set up PartyWall API:
 
 1. Clone this repository to your local machine `git clone https://github.com/gage117/express-app-boilerplate.git NEW-PROJECTS-NAME`
 2. `cd` into the cloned repository
